@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: CornflowerBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="krs6y9pensioncalculator.AboutController">
+   <children>
+      <Text layoutX="553.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="1145.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToTable" style="-fx-background-color: LightGreen;" text="Back" />
+      <TextArea editable="false" layoutX="218.0" layoutY="180.0" prefHeight="370.0" prefWidth="725.0" style="-fx-background-color: CornFlowerBlue;" text="    This application was created by Kyle Stevenson, I am a junior IT major.  I wanted to create a database for my project with some useful functionality, I thought this application could be a useful tool for small businesses, or HR departments.&#10;&#10;    This application serves as a database tool to track all plan participants and relevant data, as well as providing a useful tool for calculating the future lump sum benefit of any participant upon retirement.&#10;&#10;    By filling out the required information new participants can be added to the plan and will be saved by the application using an embedded database.&#10; &#10;   When returning to this application you can click the load data buton to repopulate the table with your previous data.  Entering a new participant will automatically update and show all table data.  The entire table can also be dropped with the Delete All Participants button (Careful! All data will be deleted).&#10;&#10;    Any plan participant can be selected to perform their pension benefit calculation. &#10;&#10;   The pension benefit calculation estimates the lump sum benefit of the participant in the Cash Balance plan at their expected retirement age.  The calculation takes their current account balance and estimates their future balance at retirement.  The calculation for future remaining years is the sum of their cash balance credit, calculated at 4% * Salary, and a fixed rate of 5% * Current Account Balance.  This calculation is performed for each year until retirement." wrapText="true">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

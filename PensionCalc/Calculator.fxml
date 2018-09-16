@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: CornFlowerBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="krs6y9pensioncalculator.CalculatorController">
+   <children>
+      <Button fx:id="backBtnCalc" layoutX="1145.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToTable" style="-fx-background-color: LightGreen;" text="Back" />
+      <Text layoutX="449.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pension Calculator">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="556.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="idText" layoutX="588.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="508.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Participant:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameText" layoutX="589.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="551.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="536.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="471.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Balance:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="ageText" layoutX="589.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="salaryText" layoutX="589.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="accBalText" layoutX="589.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="retireAge" layoutX="517.0" layoutY="388.0" promptText="Age at Retirement" />
+      <Text layoutX="539.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Cash-Balance Plan)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="495.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Expected Retirment Age:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="calcBenefitBtn" layoutX="514.0" layoutY="453.0" mnemonicParsing="false" onAction="#calculateBenefit" style="-fx-background-color: LightGreen;" text="Calculate Pension Benefit" />
+      <Text layoutX="430.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estimated Lump Sum Benefit:">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalText" layoutX="475.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToAbout" style="-fx-background-color: LightGreen;" text="About" />
+      <Text fx:id="inputError" fill="#f40c0c" layoutX="542.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
